@@ -1,5 +1,5 @@
 <template>
-    <section id="fifth">
+    <section id="story">
         <div class="header">
             <div class="title">20,30,40 乳癌女子的人生故事</div>
             <div class="subtitle">人生就像一本書，希望他們的故事，能讓妳或是你，找回日常的生活。</div>
@@ -29,9 +29,11 @@
                         <div class="word_by">32歲。母親。Jie</div>
                     </div>
                 </div>
-                <div class="bottom_link">
-                    <img src="~assets/images/arrow.svg" />
-                </div>
+                <a href="https://aboutsick.com/articles/articlepost20211013">
+                    <div class="bottom_link">
+                        <img src="~assets/images/arrow.svg" />
+                    </div>
+                </a>
             </div>
             <div class="card">
                 <div class="card_photo"><img class="w_full" src="~assets/images/maggie.png"/></div>
@@ -53,7 +55,7 @@
 </template>
 
 <style lang="scss" scoped>
-    #fifth {
+    #story {
         margin: 0 8.4%;
         padding-top: 100px;
         align-items: center;
@@ -114,6 +116,38 @@
                     position: absolute;
                     bottom: 5px;
                     right: 12px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        #story {
+            padding: 90px 20px 0;
+            margin: 0;
+            .header {
+                .title {
+                    font-size: 24px;
+                    line-height: 42px;
+                    max-width: 192px;
+                    margin: 0 auto;
+                }
+                .subtitle {
+                    font-size: 18px;
+                }
+            }
+            .container {
+                flex-direction: column;
+                .card{
+                    .card_text {
+                        .text_area {
+                            .brief {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        margin: 20px 0;
+                    }
                 }
             }
         }

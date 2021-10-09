@@ -4,11 +4,11 @@
   <section></section> -->
   <div>
     <Header/>
-    <First/>
-    <Second/>
-    <Third/>
-    <Fourth/>
-    <Fifth/>
+    <Main/>
+    <Letter/>
+    <Vaccine/>
+    <Chatroom/>
+    <Story/>
     <Footer/>
   </div>
 </template>

@@ -12,7 +12,7 @@
                     </div>
                     <div class="line_share">
                         <div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="https://aboutsick.com/pinkmonth2021" data-color="grey" data-size="small" data-count="true" style="display: none;"></div>
-                        <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+                        <script src="https://www.line-website.com/social-plugins/js/vaccineparty/loader.min.js" async="async" defer="defer"></script>
                     </div>
                 </div>
             </div>
@@ -80,6 +80,31 @@
                     width: 196px;
                     align-items: center;
                     height: inherit;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .footer{
+            .pink_area {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 90px;
+                .content {
+                    width: 100%;
+                    min-width: auto;
+                    .sub_quote {
+                        margin: 18px 35px 32px;
+                    }
+                }
+            }
+            .white_area{
+                padding: 8px 0;
+                .cooperate {
+                    justify-content: center;
+                    .title {
+                        margin-right: 0;
+                    }
                 }
             }
         }

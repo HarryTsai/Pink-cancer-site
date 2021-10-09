@@ -1,12 +1,12 @@
 <template>
-    <section id="fourth">
+    <section id="chatroom">
         <div class="type">
             <div class="quote_right">
                 <img src="~assets/images/quote1.png" />
             </div>
             <div class="row">
                 <div class="video_area">
-                    <iframe src="https://www.youtube.com/embed/6uN3x9KTeq4?controls=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/D7YDzVbzBe0?controls=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="text_area">
                     <div class="straight_line">
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="type">
-            <div class="quote_left">
+            <div class="quote_right">
                 <img src="~assets/images/quote3.png" />
             </div>
             <div class="row">
@@ -61,7 +61,7 @@
 </template>
 
 <style lang="scss" scoped>
-    #fourth {
+    #chatroom {
         padding: 130px 8.4% 20px;
         .type {
             .quote_right {
@@ -146,6 +146,68 @@
         }
         .type:nth-child(2) {
             margin: 90px 0;
+        }
+    }
+    @media (max-width: 768px) {
+        #chatroom {
+            padding: 60px 20px 0;
+            .type {
+                .quote_right, .quote_left {
+                    text-align: center;
+                    width: 100%;
+                    img {
+                        width: initial;
+                        height: inherit;
+                    }
+                }
+                .row, .row_revert {
+                    width: 100%;
+                    flex-direction: column;
+                    .video_area {
+                        top: 0;
+                        padding-bottom: 47%;
+                    }
+                    .text_area {
+                        left: 0;
+                        top: -1px;
+                        .straight_line {
+                            display: none;
+                        }
+                        .content {
+                            font-size: 21px;
+                            line-height: 29px;
+                            padding: 34px 20px 20px;
+                            .title {
+                                font-size: 21px;
+                                line-height: 29px;
+                                text-align: center;
+                                margin-bottom: 20px;
+                            }
+                            .note {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .row_revert {
+                    .video_area {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        #chatroom {
+            padding: 60px 20px 0;
+            .type {
+                .quote_right, .quote_left {
+                    height: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 </style>

@@ -9,10 +9,10 @@
         ><span class="navicon"></span
       ></label>
       <ul class="menu">
-        <li><a href="#second">乳癌手札</a></li>
-        <li><a href="#third">疫同前行</a></li>
-        <li><a href="#fourth">花樣療天室</a></li>
-        <li><a href="#fifth">人生故事</a></li>
+        <li><a href="#letter">乳癌手札</a></li>
+        <li><a href="#vaccine">疫同前行</a></li>
+        <li><a href="#chatroom">花樣療天室</a></li>
+        <li><a href="#story">人生故事</a></li>
       </ul>
     </nav>
   </header>
@@ -75,8 +75,10 @@ header {
 }
 @media (max-width: 768px) {
   .header {
+    height: 50px;
     .logo {
       margin-left: 20px;
+      padding: 13px 0px;
     }
     nav {
       width: auto;
@@ -110,7 +112,7 @@ header {
       .menu-icon {
         cursor: pointer;
         display: inline-block;
-        padding: 34px 20px;
+        padding: 24px 20px;
         position: relative;
         user-select: none;
         .navicon {
@@ -141,7 +143,7 @@ header {
       .menu {
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 50px;
         left: 0px;
         max-height: 0;
         transition: max-height 0.2s ease-out;

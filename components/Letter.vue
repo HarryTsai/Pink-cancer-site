@@ -1,5 +1,5 @@
 <template>
-  <section id="second">
+  <section id="letter">
     <div class="book">
       <div class="img_area">
         <img src="~assets/images/book.png" />
@@ -25,7 +25,7 @@
 
 
 <style lang="scss" scoped>
-#second {
+#letter {
   padding: 118px 0 20px;
   margin: 0 auto;
   .book {
@@ -96,5 +96,53 @@
       }
     }
   }
+}
+@media (max-width: 768px) {
+    #letter {
+        padding: 60px 20px 20px;
+        .book {
+            flex-direction: column;
+            padding: 0;
+            position: relative;
+            .img_area {
+                top: -25px;
+                right: 0;
+                position: absolute;
+                width: 60%;
+                transform: translateX(-33%);
+                img {
+                    width: 100%;
+                }
+            }
+            .text_area {
+                padding: 100% 20px 57px;
+                text-align: center;
+                .straight_line {
+                    display: none;
+                }
+                .content {
+                    .book_title {
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    .note {
+                        font-size: 16px;
+                        line-height: 30px;
+                        overflow: auto;
+                        max-height: none;
+                        br {
+                            &:nth-child(2), &:nth-child(4) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .bottom_link {
+                    bottom: 20px;
+                    right: 20px;
+                }
+            }
+        }
+    }
 }
 </style>
