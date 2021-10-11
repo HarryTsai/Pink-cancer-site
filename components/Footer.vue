@@ -12,7 +12,7 @@
                     </div>
                     <div class="line_share">
                         <div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="https://aboutsick.com/pinkmonth2021" data-color="grey" data-size="small" data-count="true" style="display: none;"></div>
-                        <script src="https://www.line-website.com/social-plugins/js/vaccineparty/loader.min.js" async="async" defer="defer"></script>
+ <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
                     </div>
                 </div>
             </div>
