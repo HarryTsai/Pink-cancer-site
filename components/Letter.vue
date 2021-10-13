@@ -15,9 +15,9 @@
             年，我們都有病打造了一本「乳癌旅行手札」，<br />我們集結了數位訪談者與研究員，對全台灣48位乳癌病友進行深度的質化訪談。<br />我們從中依照<span>確診、治療、病情穩定</span>三大醫病階段，<br />萃取出對乳癌病友最有幫助的資訊、經過專家及療人員的審核。<br /><br />若你還不知道這個寶貝，透過此次的乳癌月，免費下載吧！
           </p>
         </div>
-        <div class="bottom_link">
+        <a href="https://aboutsick.com/breast-note" ><div class="bottom_link">
           立刻下載<img src="~assets/images/arrow.svg" />
-        </div>
+        </div></a>
       </div>
     </div>
   </section>
